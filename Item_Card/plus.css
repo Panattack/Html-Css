@@ -1,0 +1,63 @@
+.Card {
+    margin:auto;
+    position:relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 12px; /* 5px rounded corners */
+    width: 200px;
+    padding: 8px;
+    background-color: rgb(109, 160, 188);
+    border: 8px solid #2f569a;
+}
+
+.details h3 {
+    color:beige;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+
+.element {
+    color:rgba(34, 28, 26, 0.95);
+    text-shadow: 2px 2px 5px yellowgreen;
+}
+
+html, body {
+    margin:0;
+    height:100%;
+  }
+
+.bgcontainer {
+    width:100%;
+    height:100%; 
+    margin:0;
+    height:100%;
+    background-size: 100% 100%;
+    /* Center and scale the image nicely */
+    background-position: center center;
+    font-family: "Raleway", sans-serif;
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+}
+
+.Card:hover {
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+  }
+
